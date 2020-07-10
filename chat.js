@@ -120,4 +120,4 @@ const nameAnswers = [
 	 }
 	}
 
-	genereteMessage('I can not uderstand you babe')
+	genereteMessage('I can not uderstand you man')
