@@ -1,4 +1,3 @@
-
 //Deqiq cavablar 
 const ceratinAnswers = [
 
@@ -62,6 +61,22 @@ const nameAnswers = [
 	'All right, my name is Mia'
 ]
 
+//Hal evhal tutmaq
+const howAnswers = [
+	'Thanks, bro what do you do?',
+	'Sure, everything is good you?',
+	'Realy, i am good you bro?',
+	'All right, yes everything is good'
+]
+
+//'Nece elemisene cavab verir'
+const howdoAnswers = [
+	'Thanks, I do not know really?',
+	'I am not sure man?',
+	'Every thing can be bro?',
+	'I do not know it man'
+]
+
 	function genereteMessage(message) {
 
 		
@@ -114,10 +129,30 @@ const nameAnswers = [
 		console.log(nameAnswers[a])
 	 }
 
+	 //Necesen
+	 else if(message.indexOf('how') > -1) {
+
+		var a = Math.floor((Math.random() * 4))
+		console.log(nameAnswers[a])
+
+		if (message.indexOf('you') > -1) {
+
+			if (message.indexOf('are') > -1) {
+				var e = Math.floor((Math.random() * 4))
+				console.log(howAnswers[e])
+			}
+		}
+
+		else if (message.indexOf('do') > -1) {
+			var h = Math.floor((Math.random() * 4))
+			console.log(howdoAnswers[h])
+		}
+	 }
+
 	 else {
 		var c = Math.floor((Math.random() * 4))
 		console.log(getawayAnswers[c])
 	 }
 	}
 
-	genereteMessage('I can not uderstand you man')
+	genereteMessage('how are you?')
